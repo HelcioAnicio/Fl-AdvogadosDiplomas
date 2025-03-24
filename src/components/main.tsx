@@ -58,7 +58,7 @@ export const Main = () => {
             {diplomas.map((diploma, index) => (
               <p
                 key={index}
-                className={`w-32 min-w-32 rounded-3xl border border-[#CF9A2A] py-2 text-center text-sm font-thin transition-all duration-500 hover:bg-[#CF9A2A] ${colorActived === index ? "bg-[#CF9A2A]" : ""}`}
+                className={`w-32 min-w-32 rounded-3xl border border-[#CF9A2A] py-2 text-center text-sm font-normal transition-all duration-500 hover:bg-[#CF9A2A] ${colorActived === index ? "bg-[#CF9A2A]" : ""}`}
                 onClick={() =>
                   setColorActived(colorActived === index ? null : index)
                 }
