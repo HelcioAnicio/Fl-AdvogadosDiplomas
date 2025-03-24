@@ -1,4 +1,4 @@
-import { Card } from "./card";
+nu import { Card } from "./card";
 import background from "/background.png";
 import { HiOutlineAcademicCap } from "react-icons/hi2";
 import { PiFolders } from "react-icons/pi";
@@ -40,9 +40,11 @@ export const Main = () => {
             doutorado no Brasil com suporte completo para tornar o processo
             rápido e eficiente.
           </p>
-          <button className="cursor-pointer rounded-md bg-[#CF9A2A] px-5 py-2 text-xs font-semibold transition-all duration-300 hover:bg-white hover:text-[#CF9A2A] active:bg-orange-200">
-            Entrar em contato
-          </button>
+          <a href="https://api.whatsapp.com/send?phone=5531997948742" > 
+            <button className="cursor-pointer rounded-md bg-[#CF9A2A] px-5 py-2 text-xs font-semibold transition-all duration-300 hover:bg-white hover:text-[#CF9A2A] active:bg-orange-200">
+              Entrar em contato
+            </button>
+          </a>
         </div>
       </section>
       <section className="m-auto max-w-5xl px-4 py-20" id="areasActivity">
