@@ -31,7 +31,7 @@ export const Footer = () => {
         className="decoration-gray-400 underline-offset-2 transition-all duration-300 hover:underline"
       >
         <address className="font-thin">
-          Rua Dom Oscar Romero, 18 - Sobreloja - Nova Gamelei - Belo Horizonte -
+          Rua Dom Oscar Romero, 18 - Sobreloja - Nova Gameleira - Belo Horizonte -
           MG - 30510-080
         </address>
       </a>
