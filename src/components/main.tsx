@@ -35,7 +35,7 @@ export const Main = () => {
           <h1 className="text-2xl font-bold">
             Revalidação de Diplomas Estrangeiros no Brasil
           </h1>
-          <p className="text-sm font-thin">
+          <p className="text-sm font-normal">
             Revalidamos seu diploma estrangeiro de graduação, mestrado ou
             doutorado no Brasil com suporte completo para tornar o processo
             rápido e eficiente.
