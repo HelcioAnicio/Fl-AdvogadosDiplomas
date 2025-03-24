@@ -27,7 +27,7 @@ export const Main = () => {
   return (
     <main className="h-full w-full">
       <section
-        className="m-auto max-w-5xl bg-black bg-cover bg-[-390px_top] bg-no-repeat px-4 py-32 sm:bg-right-top"
+        className="m-auto h-dvh max-w-5xl bg-black bg-cover bg-[-700px_top] bg-no-repeat px-4 py-32 sm:bg-right-top"
         style={{ backgroundImage: `url(${background})` }}
       >
         <div className="max-w-sm space-y-5">
