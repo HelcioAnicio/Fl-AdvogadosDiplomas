@@ -38,7 +38,7 @@ export const Header = () => {
 
   return (
     <header
-      className={`fixed h-14 w-full ${scrolled ? "bg-gradient-to-r from-black to-[#CF9A2A]" : ""}`}
+      className={`fixed w-full ${scrolled ? "bg-gradient-to-r from-black to-[#CF9A2A]" : ""}`}
     >
       <div className="relative m-auto flex max-w-5xl items-center justify-between px-5 py-2">
         <figure>
@@ -122,7 +122,7 @@ export const Header = () => {
           </nav>
         )}
         <nav className="hidden min-w-1/2 lg:block" role="navigation">
-          <menu className="flex justify-between gap-4 text-sm">
+          <menu className="flex items-center justify-between gap-4 text-sm">
             <li>
               <a
                 href="#areasActivity"
