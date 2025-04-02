@@ -104,15 +104,15 @@ export const Header = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="http://advogadolessa-precatorios.com.br/"
                   className="px-5 py-2 transition-all duration-300 hover:text-[#CF9A2A] focus-visible:ring active:text-orange-200"
                   onClick={menuMobile}
                 >
-                  Outro Site
+                  Precatórios
                 </a>
               </li>
               <li className="flex flex-wrap items-center gap-3 px-5 py-2 hover:text-[#CF9A2A]">
-                <a href="https://api.whatsapp.com/send?phone=5531997948742">
+                <a href="https://api.whatsapp.com/send?phone=5531971426893.">
                   <button className="flex items-center gap-3 rounded-md bg-[#FFFFFF] px-5 py-2 text-[#B2821A] transition hover:bg-[#CF9A2A] hover:text-white focus-visible:ring">
                     Entre em contato <FaArrowRight aria-hidden="true" />
                   </button>
@@ -149,14 +149,14 @@ export const Header = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="http://advogadolessa-precatorios.com.br/"
                 className="px-5 py-2 transition-all duration-300 hover:text-[#CF9A2A] focus-visible:ring active:text-orange-200"
               >
-                Outro site
+                Precatórios
               </a>
             </li>
             <li>
-              <a href="https://api.whatsapp.com/send?phone=5531997948742">
+              <a href="https://api.whatsapp.com/send?phone=5531971426893.">
                 <button className="flex items-center gap-3 rounded-md bg-[#FFFFFF] px-5 py-2 text-[#B2821A] transition hover:bg-[#CF9A2A] hover:text-white focus-visible:ring">
                   Entre em contato <FaArrowRight aria-hidden="true" />
                 </button>

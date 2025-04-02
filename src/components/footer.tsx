@@ -14,7 +14,7 @@ export const Footer = () => {
         contato conosco e teremos prazer em ajudar!
       </p>
       <a
-        href="https://api.whatsapp.com/send?phone=5531997948742"
+        href="https://api.whatsapp.com/send?phone=5531971426893."
         className="m-auto my-10 flex w-full max-w-80 items-center justify-center"
       >
         <button className="w-4/6 rounded-lg bg-white py-1 text-black">
@@ -31,8 +31,8 @@ export const Footer = () => {
         className="decoration-gray-400 underline-offset-2 transition-all duration-300 hover:underline"
       >
         <address className="font-thin">
-          Rua Dom Oscar Romero, 18 - Sobreloja - Nova Gameleira - Belo Horizonte -
-          MG - 30510-080
+          Rua Dom Oscar Romero, 18 - Sobreloja - Nova Gameleira - Belo Horizonte
+          - MG - 30510-080
         </address>
       </a>
       <p className="text-sm font-bold">Francisco Galvão Lessa - Advogado</p>
