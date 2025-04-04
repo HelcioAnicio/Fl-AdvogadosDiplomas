@@ -28,29 +28,33 @@ export const Main = () => {
   return (
     <main className="h-full w-full">
       <section
-        className="m-auto h-dvh max-w-5xl bg-black bg-cover bg-[-700px_top] bg-no-repeat px-4 py-32 sm:bg-right-top"
+        className="h-dvh w-full bg-black bg-cover bg-[-700px_top] bg-no-repeat sm:bg-right-top"
         style={{ backgroundImage: `url(${background})` }}
         role="banner"
-        aria-label="Seção de boas-vindas"
       >
-        <div className="max-w-sm space-y-5">
-          <p className="text-sm text-[#CF9A2A]">Bem-vindo</p>
-          <h1 className="text-2xl font-bold">
-            Revalidação de Diplomas Estrangeiros no Brasil
-          </h1>
-          <p className="text-sm font-normal">
-            Revalidamos seu diploma estrangeiro de graduação, mestrado ou
-            doutorado no Brasil com suporte completo para tornar o processo
-            rápido e eficiente.
-          </p>
-          <a
-            href="https://api.whatsapp.com/send?phone=5531971426893."
-            aria-label="Entrar em contato pelo WhatsApp"
-          >
-            <button className="cursor-pointer rounded-md bg-[#CF9A2A] px-5 py-2 text-xs font-semibold transition-all duration-300 hover:bg-white hover:text-[#CF9A2A] focus:ring-2 focus:ring-[#CF9A2A] focus:ring-offset-2 focus:outline active:bg-orange-200">
-              Entrar em contato
-            </button>
-          </a>
+        <div
+          className="m-auto h-full max-w-5xl px-4 py-32"
+          aria-label="Seção de boas-vindas"
+        >
+          <div className="max-w-sm space-y-5">
+            <p className="text-sm text-[#CF9A2A]">Bem-vindo</p>
+            <h1 className="text-2xl font-bold">
+              Revalidação de Diplomas Estrangeiros no Brasil
+            </h1>
+            <p className="text-sm font-normal">
+              Revalidamos seu diploma estrangeiro de graduação, mestrado ou
+              doutorado no Brasil com suporte completo para tornar o processo
+              rápido e eficiente.
+            </p>
+            <a
+              href="https://api.whatsapp.com/send?phone=5531971426893."
+              aria-label="Entrar em contato pelo WhatsApp"
+            >
+              <button className="cursor-pointer rounded-md bg-[#CF9A2A] px-5 py-2 text-xs font-semibold transition-all duration-300 hover:bg-white hover:text-[#CF9A2A] focus:ring-2 focus:ring-[#CF9A2A] focus:ring-offset-2 focus:outline active:bg-orange-200">
+                Entrar em contato
+              </button>
+            </a>
+          </div>
         </div>
       </section>
 
