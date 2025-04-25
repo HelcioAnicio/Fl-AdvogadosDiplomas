@@ -1,5 +1,5 @@
 import { Card } from "./card";
-import background from "/background.png";
+// import background from "/bg.jpg";
 import { HiOutlineAcademicCap } from "react-icons/hi2";
 import { PiFolders } from "react-icons/pi";
 import { TbWorld } from "react-icons/tb";
@@ -29,7 +29,7 @@ export const Main = () => {
     <main className="h-full w-full">
       <section
         className="h-dvh w-full bg-black bg-cover bg-[-700px_top] bg-no-repeat sm:bg-right-top"
-        style={{ backgroundImage: `url(${background})` }}
+        // style={{ backgroundImage: `url(${background})` }}
         role="banner"
       >
         <div
@@ -47,7 +47,7 @@ export const Main = () => {
               rápido e eficiente.
             </p>
             <a
-              href="https://api.whatsapp.com/send?phone=5531971426893."
+              href="https://wa.me/5531971426893"
               aria-label="Entrar em contato pelo WhatsApp"
             >
               <button className="cursor-pointer rounded-md bg-[#CF9A2A] px-5 py-2 text-xs font-semibold transition-all duration-300 hover:bg-white hover:text-[#CF9A2A] focus:ring-2 focus:ring-[#CF9A2A] focus:ring-offset-2 focus:outline active:bg-orange-200">

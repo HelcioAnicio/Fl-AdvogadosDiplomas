@@ -14,10 +14,10 @@ export const Footer = () => {
         contato conosco e teremos prazer em ajudar!
       </p>
       <a
-        href="https://api.whatsapp.com/send?phone=5531971426893."
-        className="m-auto my-10 flex w-full max-w-80 items-center justify-center"
+        href="https://wa.me/5531971426893"
+        className="m-auto my-10 flex w-full max-w-80 cursor-pointer items-center justify-center"
       >
-        <button className="w-4/6 rounded-lg bg-white py-1 text-black">
+        <button className="w-4/6 cursor-pointer rounded-lg bg-white py-1 text-black">
           (31) 97142-6893
         </button>
         <IoLogoWhatsapp className="-ml-3 size-8 rounded-md bg-[#CF9A2A] px-2 transition-all duration-300 hover:bg-yellow-500" />
@@ -28,7 +28,7 @@ export const Footer = () => {
       </p>
       <a
         href="https://g.co/kgs/J7TjJma"
-        className="decoration-gray-400 underline-offset-2 transition-all duration-300 hover:underline"
+        className="cursor-pointer decoration-gray-400 underline-offset-2 transition-all duration-300 hover:underline"
       >
         <address className="font-thin">
           Rua Dom Oscar Romero, 18 - Sobreloja - Nova Gameleira - Belo Horizonte
