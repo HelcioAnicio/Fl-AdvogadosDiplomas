@@ -33,7 +33,7 @@ export const Main = () => {
         role="banner"
       >
         <div
-          className="m-auto h-full max-w-5xl px-4 py-32"
+          className="m-auto flex h-full max-w-5xl flex-col items-start px-4 py-32 lg:justify-center"
           aria-label="Seção de boas-vindas"
         >
           <div className="max-w-sm space-y-5">
