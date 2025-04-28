@@ -1,5 +1,5 @@
 import { Card } from "./card";
-// import background from "/bg.jpg";
+import background from "/bg.png";
 import { HiOutlineAcademicCap } from "react-icons/hi2";
 import { PiFolders } from "react-icons/pi";
 import { TbWorld } from "react-icons/tb";
@@ -28,8 +28,8 @@ export const Main = () => {
   return (
     <main className="h-full w-full">
       <section
-        className="h-dvh w-full bg-black bg-cover bg-[-700px_top] bg-no-repeat sm:bg-right-top"
-        // style={{ backgroundImage: `url(${background})` }}
+        className="h-dvh w-full bg-black bg-cover bg-[-400px_top] bg-no-repeat sm:bg-right-top"
+        style={{ backgroundImage: `url(${background})` }}
         role="banner"
       >
         <div
