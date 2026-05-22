@@ -42,7 +42,11 @@ export const Header = () => {
     >
       <div className="relative m-auto flex max-w-5xl items-center justify-between px-5 py-2">
         <figure>
-          <img src={logo} alt="Logo da empresa" className="w-24" />
+          <img
+            src={logo}
+            alt="Logo da empresa"
+            className="w-24 min-[400px]:w-32"
+          />
         </figure>
         <button
           className="cursor-pointer"

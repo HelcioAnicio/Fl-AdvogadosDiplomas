@@ -13,16 +13,18 @@ export const Card = ({
   return (
     <div
       onClick={() => setColorActived(!colorActived)}
-      className={`group h-max w-full max-w-54 space-y-3 rounded-lg p-7 shadow-lg transition-all duration-300 hover:bg-[#CF9A2A] hover:text-white ${colorActived && "bg-[#CF9A2A] text-white"}`}
+      className={`group h-full w-full max-w-70 space-y-3 rounded-lg px-4 py-10 shadow-lg transition-all duration-300 hover:bg-[#CF9A2A] hover:text-white md:max-w-80 ${colorActived && "bg-[#CF9A2A] text-white"}`}
     >
       <div
         className={`${colorActived && "text-white"} text-6xl text-[#CF9A2A] transition-all duration-300 group-hover:text-white`}
       >
         {icon}
       </div>
-      <h1 className="font-bold">{heading}</h1>
-      <hr className="w-16" />
-      <p className="font-extralight">{paragraph}</p>
+      <h1 className="w-full text-lg font-bold min-[420px]:text-xl">
+        {heading}
+      </h1>
+      <hr className="w-2/3" />
+      <p className="font-extralight min-[420px]:text-lg">{paragraph}</p>
     </div>
   );
 };

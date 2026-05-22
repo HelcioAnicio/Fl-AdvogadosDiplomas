@@ -28,29 +28,31 @@ export const Main = () => {
   return (
     <main className="h-full w-full">
       <section
-        className="h-dvh w-full bg-black bg-cover bg-[-400px_top] bg-no-repeat sm:bg-right-top"
+        className="h-dvh w-full bg-black bg-cover bg-[-400px_top] bg-no-repeat sm:bg-top-right md:bg-center"
         style={{ backgroundImage: `url(${background})` }}
         role="banner"
       >
         <div
-          className="m-auto flex h-full max-w-5xl flex-col items-start px-4 py-32 lg:justify-center"
+          className="m-auto flex h-full max-w-5xl flex-col items-start justify-center px-4 py-32 lg:justify-center"
           aria-label="Seção de boas-vindas"
         >
-          <div className="max-w-sm space-y-5">
-            <p className="text-sm text-[#CF9A2A]">Bem-vindo</p>
-            <h1 className="text-2xl font-bold">
-              Revalidação de Diplomas Estrangeiros no Brasil
-            </h1>
-            <p className="text-sm font-normal">
-              Revalidamos seu diploma estrangeiro de graduação, mestrado ou
-              doutorado no Brasil com suporte completo para tornar o processo
-              rápido e eficiente.
-            </p>
+          <div className="max-w-lg space-y-20 min-[500px]:space-y-32 sm:max-w-4xl">
+            <div className="space-y-3">
+              <p className="text-xs text-[#CF9A2A] sm:text-base">Bem-vindo</p>
+              <h1 className="text-4xl font-bold min-[420px]:text-5xl md:text-6xl">
+                Revalidação de Diplomas Estrangeiros no Brasil
+              </h1>
+              <p className="max-w-xl text-base font-normal min-[420px]:text-xl sm:mt-10 md:text-2xl">
+                Revalidamos seu diploma estrangeiro de graduação, mestrado ou
+                doutorado no Brasil com suporte completo para tornar o processo
+                rápido e eficiente.
+              </p>
+            </div>
             <a
               href="https://wa.me/5531971426893"
               aria-label="Entrar em contato pelo WhatsApp"
             >
-              <button className="cursor-pointer rounded-md bg-[#CF9A2A] px-5 py-2 text-xs font-semibold transition-all duration-300 hover:bg-white hover:text-[#CF9A2A] focus:ring-2 focus:ring-[#CF9A2A] focus:ring-offset-2 focus:outline active:bg-orange-200">
+              <button className="cursor-pointer rounded-md bg-[#CF9A2A] px-10 py-3 text-lg font-semibold transition-all duration-300 hover:bg-white hover:text-[#CF9A2A] focus:ring-2 focus:ring-[#CF9A2A] focus:ring-offset-2 focus:outline active:bg-orange-200 min-[500px]:text-2xl">
                 Entrar em contato
               </button>
             </a>
@@ -59,19 +61,25 @@ export const Main = () => {
       </section>
 
       <section
-        className="m-auto max-w-5xl px-4 py-20"
+        className="m-auto flex max-w-5xl flex-wrap space-y-10 px-4 py-20"
         id="areasActivity"
         aria-labelledby="areas-title"
       >
-        <p className="mb-7 text-sm font-normal text-[#CF9A2A]" id="areas-title">
-          Áreas de atuação
-        </p>
-        <div className="flex flex-wrap">
-          <h2 className="max-w-52 text-2xl font-semibold lg:max-w-72">
+        <div className="flex flex-col gap-10 lg:flex-1">
+          <p
+            className="mb-7 text-xs font-normal text-[#CF9A2A]"
+            id="areas-title"
+          >
+            Áreas de atuação
+          </p>
+          <h2
+            className="max-w-2xl text-4xl font-semibold sm:text-5xl"
+            id="areas-title"
+          >
             Revalidamos diplomas nas seguintes áreas:
           </h2>
           <div
-            className="m-auto flex max-w-lg flex-wrap justify-center gap-5 py-10 sm:py-0"
+            className="m-auto flex max-w-lg flex-wrap justify-center gap-5 py-10 sm:py-0 lg:hidden"
             role="list"
             aria-live="polite"
           >
@@ -91,30 +99,54 @@ export const Main = () => {
               </button>
             ))}
           </div>
+          <p className="sm max-w-4xl text-base font-extralight min-[420px]:text-lg">
+            Se você possui um diploma estrangeiro de graduação, mestrado ou
+            doutorado e deseja revalidá-lo no Brasil, estamos aqui para ajudar.
+            Oferecemos suporte completo para a escolha da universidade
+            brasileira mais adequada ao seu caso, tornando o processo mais
+            rápido e eficiente.
+          </p>
         </div>
-        <p className="text-sm font-extralight md:-mt-32 md:max-w-56">
-          Se você possui um diploma estrangeiro de graduação, mestrado ou
-          doutorado e deseja revalidá-lo no Brasil, estamos aqui para ajudar.
-          Oferecemos suporte completo para a escolha da universidade brasileira
-          mais adequada ao seu caso, tornando o processo mais rápido e
-          eficiente.
-        </p>
+        <div
+          className="m-auto hidden max-w-lg flex-wrap justify-center gap-5 py-10 sm:py-0 lg:flex lg:flex-1"
+          role="list"
+          aria-live="polite"
+        >
+          {diplomas.map((diploma, index) => (
+            <button
+              key={index}
+              className={`w-32 min-w-32 rounded-3xl border border-[#CF9A2A] py-2 text-center text-sm font-normal transition-all duration-500 hover:bg-[#CF9A2A] focus:ring-2 focus:ring-[#CF9A2A] focus:ring-offset-2 focus:outline-none min-[420px]:text-base md:text-lg ${
+                colorActived === index ? "bg-[#CF9A2A]" : "bg-transparent"
+              }`}
+              onClick={() =>
+                setColorActived(colorActived === index ? null : index)
+              }
+              aria-pressed={colorActived === index}
+              role="listitem"
+            >
+              {diploma}
+            </button>
+          ))}
+        </div>
       </section>
 
       <section className="bg-white" id="howWork" aria-labelledby="how-title">
         <div className="m-auto max-w-5xl space-y-8 px-4 py-20 text-black">
           <div className="space-y-1">
             <p className="text-sm text-[#CF9A2A]">O caminho para o sucesso</p>
-            <h2 className="text-2xl font-bold" id="how-title">
+            <h2
+              className="text-4xl font-bold min-[450px]:text-5xl"
+              id="how-title"
+            >
               Como Funciona?
             </h2>
-            <p className="max-w-96 text-sm font-light">
+            <p className="max-w-lg text-base font-light min-[420px]:text-lg">
               Descubra como facilitamos cada etapa, garantindo sucesso em sua
               jornada acadêmica internacional
             </p>
           </div>
           <div
-            className="flex w-full flex-wrap items-center justify-evenly gap-x-2 gap-y-8 py-10"
+            className="flex w-full flex-wrap items-center justify-center gap-x-2 gap-y-8 py-10 md:grid md:grid-cols-2 md:justify-items-center"
             role="list"
           >
             <Card
